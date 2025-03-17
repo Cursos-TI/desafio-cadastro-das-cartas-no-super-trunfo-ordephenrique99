@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-//TESTE PEDRO H C MOURA
 int main(){
     char estado1[2], estado2[2];            //váriaveis para armazenamento da letra que representa o estado.
     char id1[3], id2[3];                    //váriaveis para armazenamento do código que representa a cidade.
