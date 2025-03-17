@@ -9,6 +9,8 @@ int main(){
     float area1, area2;                     //váriaveis para armazenamento da área territorial.
     float PIB1, PIB2;                       //váriaveis para armazenamento do valor do PIB.
     int pTur1, pTur2;                       //váriaveis para armazenamento da quantidade de pontos turisticos. 
+    float densPopul1, densPopu2;            //váriaveis para armazenamento da Densidade Populacional.
+    float PIBperCapta1, PIBperCapita2;      //váriaveis para armazenamento do PIB per Capita.
 
     //inicio da solicitação dos dados referente a 1ª carta.
     printf("Informe os dados da 1ª carta a seguir\n");
