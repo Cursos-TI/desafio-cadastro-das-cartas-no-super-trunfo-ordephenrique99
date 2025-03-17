@@ -76,6 +76,8 @@ int main(){
     printf("Área: %.2f km²\n", area1);                      //exibindo o tamanho em área da cidade.
     printf("PIB: %.2f bilhões de reais\n", PIB1);           //exibindo o PIB da cidade.
     printf("Número de Pontos Turísticos: %d\n", pTur1);     //exibindo a quantidade de pontos turisticos da cidade.
+    printf("Densidade Populacional: %.2f hab/km²", densPopul1); //exibindo a densidade populacional.
+    printf("PIB per Capita: %.2f reais", PIBperCapita1);        //exibindo o PIB per Capita.
 
     //Inicio da exibição do dados da 2ª carta.
     printf("\nCarta 2:\n");                                 //Mensagem de inicio
@@ -86,6 +88,8 @@ int main(){
     printf("Área: %.2f km²\n", area2);                      //exibindo o tamanho em área da cidade.
     printf("PIB: %.2f bilhões de reais\n", PIB2);           //exibindo o PIB da cidade.
     printf("Número de Pontos Turísticos: %d\n", pTur2);     //exibindo a quantidade de pontos turisticos da cidade.
+    printf("Densidade Populacional: %.2f hab/km²", densPopul2); //exibindo a densidade populacional.
+    printf("PIB per Capita: %.2f reais", PIBperCapita2);        //exibindo o PIB per Capita.
 
     return 0;
 }
