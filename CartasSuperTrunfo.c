@@ -9,8 +9,8 @@ int main(){
     float area1, area2;                     //váriaveis para armazenamento da área territorial.
     float PIB1, PIB2;                       //váriaveis para armazenamento do valor do PIB.
     int pTur1, pTur2;                       //váriaveis para armazenamento da quantidade de pontos turisticos. 
-    float densPopul1, densPopu2;            //váriaveis para armazenamento da Densidade Populacional.
-    float PIBperCapta1, PIBperCapita2;      //váriaveis para armazenamento do PIB per Capita.
+    float densPopul1, densPopul2;            //váriaveis para armazenamento da Densidade Populacional.
+    float PIBperCapita1, PIBperCapita2;      //váriaveis para armazenamento do PIB per Capita.
 
     //inicio da solicitação dos dados referente a 1ª carta.
     printf("Informe os dados da 1ª carta a seguir\n");
@@ -35,6 +35,9 @@ int main(){
     printf("Quantidade de Pontos Turisticos: ");    //Solicitando o dado.
     scanf("%d", &pTur1);                            //Recebendo do usuário e armazenando o dado na váriavel.
 
+    //Inicio da operação para armazenar os dados referentes a Densidade Populacional e PIB per Capita da carta 01.
+    densPopul1 = (float) populacao1/area1;          //Operação Densidade.
+    PIBperCapita1 = (float) PIB1/populacao1;        //Operação PIB per Capita.
 
     //inicio da solicitação dos dados referente a 2ª carta.
     printf("\nInforme os dados da 2ª carta a seguir\n");
@@ -58,6 +61,10 @@ int main(){
 
     printf("Quantidade de Pontos Turisticos: ");    //Solicitando o dado.
     scanf("%d", &pTur2);                            //Recebendo do usuário e armazenando o dado na váriavel.
+
+    //Inicio da operação para armazenar os dados referentes a Densidade Populacional e PIB per Capita da carta 02.
+    densPopul2 = (float) populacao2/area2;          //Operação Densidade.
+    PIBperCapita2 = (float) PIB2/populacao2;        //Operação PIB per Capita.
 
     //Inicio da exibição do dados das cartas
     //Inicio da exibição do dados da 1ª carta.
