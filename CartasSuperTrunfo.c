@@ -4,7 +4,7 @@ int main(){
     char estado1[2], estado2[2];            //váriaveis para armazenamento da letra que representa o estado.
     char id1[3], id2[3];                    //váriaveis para armazenamento do código que representa a cidade.
     char nomeCid1[15], nomeCid2[15];        //váriaveis para armazenamento do nome da cidade.
-    int populacao1, populacao2;             //váriaveis para armazenamento da quantidade de população
+    unsigned long int populacao1, populacao2;             //váriaveis para armazenamento da quantidade de população
     float area1, area2;                     //váriaveis para armazenamento da área territorial.
     float PIB1, PIB2;                       //váriaveis para armazenamento do valor do PIB.
     int pTur1, pTur2;                       //váriaveis para armazenamento da quantidade de pontos turisticos. 
