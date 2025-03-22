@@ -1,61 +1,63 @@
 #include<stdio.h>
 
 int main(){
-    char estado1[2], estado2[2];            //váriaveis para armazenamento da letra que representa o estado.
-    char id1[3], id2[3];                    //váriaveis para armazenamento do código que representa a cidade.
-    char nomeCid1[15], nomeCid2[15];        //váriaveis para armazenamento do nome da cidade.
-    unsigned long int populacao1, populacao2;             //váriaveis para armazenamento da quantidade de população
-    float area1, area2;                     //váriaveis para armazenamento da área territorial.
-    float PIB1, PIB2;                       //váriaveis para armazenamento do valor do PIB.
-    int pTur1, pTur2;                       //váriaveis para armazenamento da quantidade de pontos turisticos. 
+    char estado1[2] = 'A', estado2[2] ='B';            //váriaveis para armazenamento da letra que representa o estado.
+    char id1[3] = '1', id2[3] = '2';                    //váriaveis para armazenamento do código que representa a cidade.
+    char nomeCid1[15] ='FORTALEZA', nomeCid2[15]= 'TERESINA';        //váriaveis para armazenamento do nome da cidade.
+    unsigned long int populacao1 = 12500000, populacao2 = 1500000;             //váriaveis para armazenamento da quantidade de população
+    float area1 = 3500.0 , area2 = 2100.0 ;                     //váriaveis para armazenamento da área territorial.
+    float PIB1 = 22.0, PIB2 = 10.0;                       //váriaveis para armazenamento do valor do PIB.
+    int pTur1 = 10, pTur2 = 20;                       //váriaveis para armazenamento da quantidade de pontos turisticos. 
     float densPopul1, densPopul2;            //váriaveis para armazenamento da Densidade Populacional.
     float PIBperCapita1, PIBperCapita2;      //váriaveis para armazenamento do PIB per Capita.
+    float superPoder1, superpoder2;
+
 
     //inicio da solicitação dos dados referente a 1ª carta.
     printf("Informe os dados da 1ª carta a seguir\n");
     printf("Digite o estado: ");            //Solicitando o dado.
-    scanf("%s", &estado1);                  //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s", &estado1);                  //Recebendo do usuário e armazenando o dado na váriavel.
     
     printf("Digite o Código da Cidade: ");  //Solicitando o dado.
-    scanf("%s",&id1);                       //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s",&id1);                       //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Nome da Cidade: ");             //Solicitando o dado.
-    scanf("%s", &nomeCid1);                 //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s", &nomeCid1);                 //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("População: ");                  //Solicitando o dado.
-    scanf("%d", &populacao1);               //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%d", &populacao1);               //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Area: ");                       //Solicitando o dado.
-    scanf("%f", &area1);                    //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%f", &area1);                    //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Informe o PIB: ");              //Solicitando o dado.
-    scanf("%f", &PIB1);                     //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%f", &PIB1);                     //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Quantidade de Pontos Turisticos: ");    //Solicitando o dado.
-    scanf("%d", &pTur1);                            //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%d", &pTur1);                            //Recebendo do usuário e armazenando o dado na váriavel.
 
     //inicio da solicitação dos dados referente a 2ª carta.
     printf("\nInforme os dados da 2ª carta a seguir\n");
     printf("Digite o estado: ");            //Solicitando o dado.
-    scanf("%s", &estado2);                  //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s", &estado2);                  //Recebendo do usuário e armazenando o dado na váriavel.
     
     printf("Digite o Código da Cidade: ");  //Solicitando o dado.
-    scanf("%s",&id2);                       //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s",&id2);                       //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Nome da Cidade: ");             //Solicitando o dado.
-    scanf("%s", &nomeCid2);                 //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%s", &nomeCid2);                 //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("População: ");                  //Solicitando o dado.
-    scanf("%d", &populacao2);               //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%d", &populacao2);               //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Area: ");                       //Solicitando o dado.
-    scanf("%f", &area2);                    //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%f", &area2);                    //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Informe o PIB: ");              //Solicitando o dado.
-    scanf("%f", &PIB2);                     //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%f", &PIB2);                     //Recebendo do usuário e armazenando o dado na váriavel.
 
     printf("Quantidade de Pontos Turisticos: ");    //Solicitando o dado.
-    scanf("%d", &pTur2);                            //Recebendo do usuário e armazenando o dado na váriavel.
+    //scanf("%d", &pTur2);                            //Recebendo do usuário e armazenando o dado na váriavel.
 
     //Inicio da exibição do dados das cartas
     //Inicio da exibição do dados da 1ª carta.
@@ -92,5 +94,8 @@ int main(){
     printf("Densidade Populacional: %.2f hab/km²\n", densPopul2); //exibindo a densidade populacional.
     printf("PIB per Capita: %.2f reais\n", PIBperCapita2);        //exibindo o PIB per Capita.
 
+    superPoder1 = (float) (populacao1 + area1 + PIB1 + pTur1 + PIBperCapita1 + (1/densPopul1));
+    printf("\n\nSuper Poder: %f\n",superPoder1);
+ 
     return 0;
 }
