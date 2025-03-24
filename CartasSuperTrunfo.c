@@ -108,6 +108,14 @@ int main(){
     printf("Densidade Populacional:(%d)\n",((1/densPopul1)>(1/densPopul2)));
     printf("PIB per Capita:(%d)\n",PIBperCapita1>PIBperCapita2);
     printf("Super Poder:(%d)\n", superPoder1>superPoder2);
+    
+    //Comparação de atributo para definir carta vencedora
+    if(populacao1 > populacao2){                        //Verificação se valor da Carta 1 é maior que a Carta 2
+        printf("Carta 1 %s venceu!", nomeCid1);         //Caso carta 1 for maior valor apresenta mensagem de vencedor
+    }
+    else{                                                           
+        printf("Carta 2 %s venceu!", nomeCid2);         //Caso carta 2 for maior valor apresenta mensagem de vencedor
+    }
   
     return 0;
 }
